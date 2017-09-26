@@ -28,3 +28,10 @@ const benchmark = (array, iterations) => {
   console.log("insertion took:", insertionResult);
   console.log("merge took:", mergeResult);
 };
+
+let testArray = [];
+let totalNumber = 100000;
+for (let i = 0; i < totalNumber; i++) {
+  testArray.push(Math.floor(Math.random() * totalNumber));
+}
+benchmark(testArray, 1);

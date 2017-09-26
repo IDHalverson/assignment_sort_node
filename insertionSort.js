@@ -16,10 +16,10 @@ const insertionSort = arrayToSort => {
     sortedArray = insert(sortedArray, sortedArray.length - 1, element);
   });
 
-  console.log(sortedArray);
+  return sortedArray;
 };
 
 insertionSort([1, 3, 7, 2, 5]);
 // [1,2,3,5,7]
 
-module.exports = insertSort;
+module.exports = insertionSort;
