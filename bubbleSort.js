@@ -15,11 +15,11 @@ const bubbleSort = arrayToSort => {
         arrayToSort[i + 1] = item1;
         changes++;
       }
-      console.log(changes);
-      if (changes === 0) {
-        finished = true;
-      }
+
       i++;
+    }
+    if (changes === 0) {
+      finished = true;
     }
     i = 0;
   }
