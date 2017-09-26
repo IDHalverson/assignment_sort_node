@@ -1,7 +1,5 @@
-function merge(leftArr, rightArr) {
+function merge(leftArr = [], rightArr = []) {
   let sorted = [];
-  leftArr = leftArr || [];
-  rightArr = rightArr || [];
   while (leftArr.length && rightArr.length) {
     sorted.push((leftArr[0] < rightArr[0] ? leftArr : rightArr).shift());
   }

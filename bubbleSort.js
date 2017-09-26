@@ -28,3 +28,5 @@ const bubbleSort = arrayToSort => {
 
 console.log(bubbleSort([1, 3, 7, 2, 5]));
 // [1,2,3,5,7]
+
+module.exports = bubbleSort;
