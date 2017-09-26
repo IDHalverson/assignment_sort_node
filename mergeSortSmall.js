@@ -1,9 +1,11 @@
-const merge = (leftArr, rightArr, sorted = []) => {
-  sorted.push((leftArr[0] < rightArr[0] ? leftArr : rightArr).shift());
-  return leftArr.length && rightArr.length
-    ? merge(leftArr, rightArr, sorted)
+const merge = (leftArr, rightArr, sorted = []) =>
+  leftArr.length && rightArr.length
+    ? merge(
+        leftArr,
+        rightArr,
+        sorted.concat((leftArr[0] < rightArr[0] ? leftArr : rightArr).shift())
+      )
     : sorted.concat(leftArr[0] ? leftArr : rightArr);
-};
 
 const mergeSort = unsortedArray =>
   unsortedArray.length < 2
