@@ -16,7 +16,8 @@ const mergeSort = unsortedArray => {
   const secondHalf = mergeSort(unsortedArray.slice(split, length));
 
   return merge(firstHalf, secondHalf);
-  // return firstHalf.concat(secondHalf);
 };
 
-console.log(mergeSort([1, 3, 7, 2, 5, 1, 4, 5, 7, 3, 3, 3, 3, 3, 21, 2, 2, 3]));
+// console.log(mergeSort([1, 3, 7, 2, 5, 1, 4, 5, 7, 3, 3, 3, 3, 3, 21, 2, 2, 3]));
+
+module.exports = mergeSort;

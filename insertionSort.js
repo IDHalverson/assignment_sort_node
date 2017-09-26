@@ -19,7 +19,7 @@ const insertionSort = arrayToSort => {
   return sortedArray;
 };
 
-insertionSort([1, 3, 7, 2, 5]);
+// console.log(insertionSort([1, 3, 7, 2, 5, 3, 5, 2, 4, 4, 3, 2, 4, 5]));
 // [1,2,3,5,7]
 
 module.exports = insertionSort;
